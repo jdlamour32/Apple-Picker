@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -308,6 +309,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffbaccb882cffe44b0401ebcd35971c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Apple_Picker
+  basketPrefab: {fileID: 4710004076689985913, guid: b4e409dfb0ebb4541939e5c2bd3789f4, type: 3}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &9218674011657920319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,6 +376,10 @@ PrefabInstance:
     - target: {fileID: 1059811690412699286, guid: 390d30e07c6657242b5b85b798b2a0f0, type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713217049183417316, guid: 390d30e07c6657242b5b85b798b2a0f0, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
