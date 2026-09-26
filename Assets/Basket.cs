@@ -8,8 +8,10 @@ public class Basket : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject scoreGO = GameObject.Find("ScoreCounter");
-        scoreCounter = scoreGO.GetComponent<ScoreCounter>();
+        // Find a GameObject named ScoreCounter in the Scene Hierarchy
+         GameObject scoreGO = GameObject.Find("ScoreCounter");         // b
+         // Get the ScoreCounter (Script) component of scoreGO
+         scoreCounter = scoreGO.GetComponent<ScoreCounter>();   
     }
 
     // Update is called once per frame
